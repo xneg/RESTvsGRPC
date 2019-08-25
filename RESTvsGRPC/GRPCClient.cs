@@ -26,12 +26,10 @@ namespace RESTvsGRPC
         {
             List<MeteoriteLanding> meteoriteLandings = new List<MeteoriteLanding>();
 
-            using (var response = client.GetLargePayload(new EmptyRequest()).ResponseStream)
+            using var call = client.GetLargePayload(new EmptyRequest());
+            while (await call.ResponseStream.MoveNext())
             {
-                while (await response.MoveNext())
-                {
-                    meteoriteLandings.Add(response.Current);
-                }
+                meteoriteLandings.Add(call.ResponseStream.Current);
             }
 
             return meteoriteLandings;
