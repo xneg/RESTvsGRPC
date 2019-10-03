@@ -16,11 +16,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestAPI", "RestAPI\RestAPI.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModelLibrary", "ModelLibrary\ModelLibrary.csproj", "{3368AADD-9211-4252-BF5A-F9FEF46DA8DD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GrpcAPI", "GrpcAPI\GrpcAPI.csproj", "{CC97B3D3-D07C-43E8-8C1B-BFD805479867}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GrpcAPI", "GrpcAPI\GrpcAPI.csproj", "{CC97B3D3-D07C-43E8-8C1B-BFD805479867}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{599E91B7-859D-40E8-8525-FA40BB1B61BF}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		NuGet.config = NuGet.config
 		README.md = README.md
 	EndProjectSection
 EndProject
